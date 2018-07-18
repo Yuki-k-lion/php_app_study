@@ -11,9 +11,18 @@ class Review {
   }
 
   public function __construct() {
+    $this->title = "";
+    $this->genre = "";
+    $this->impresston = "";
     Review::$review_count = Review::$review_count + 1;
     echo "Reviewクラスのインスタンスが生成されました。\n";
   }
+
+  public function write_review($title, $genre, $impression) {
+  $this->title = $title;
+  $this->genre = $genre;
+  $this->impression = $impression;
+}
 
   public function show_review() {
   echo "ジャンル : " . "映画\n";
@@ -33,6 +42,7 @@ class Review {
 echo Review::get_review_count(), PHP_EOL;
 
 $review = new Review(); // Reviewクラスのインスタンスを生成
+$review->write_review("るろうに剣心", "映画", "アクションがすごい！");
 var_dump($review);
 $review->show_review();
 
