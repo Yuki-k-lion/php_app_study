@@ -24,6 +24,7 @@ class Review {
 // static(スタティック)メソッドと呼ぶこともあります。
 $review = new Review(); // Reviewクラスのインスタンスを生成
 var_dump($review);
+$review->show_review();
 
 echo Review::get_review_count(), PHP_EOL;
 
