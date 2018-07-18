@@ -7,6 +7,11 @@ class Review {
   public static function get_review_count(){
     return 0;
   }
+  
+  public function __construct() {
+    echo "Reviewクラスのインスタンスが生成されました。\n";
+  }
+
   public function show_review() {
   echo "ジャンル : " . "映画\n";
   echo "---------------------------\n";
