@@ -18,7 +18,7 @@
 
 //output
   var_dump($post);
-   echo "type: $post['type']\n" . $Line;
+   echo "type: {$post['type']}\n" . $Line;
   // echo "title: $post['title']\n" . $Line;
   // echo "comment: $post['commnet']\n" . $Line;
  ?>
