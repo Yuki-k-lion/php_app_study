@@ -4,11 +4,14 @@
 
 <?php
 class Review {
+  private static $review_count = 0;
+
   public static function get_review_count(){
-    return 0;
+    return Review::$review_count;
   }
-  
+
   public function __construct() {
+    Review::$review_count = Review::$review_count + 1;
     echo "Reviewクラスのインスタンスが生成されました。\n";
   }
 
@@ -27,6 +30,8 @@ class Review {
 // つまり、クラスに対して使用できるメソッドです。
 // 具体的には「静的メソッドを定義したクラス自身」に対して使えるメソッドです。
 // static(スタティック)メソッドと呼ぶこともあります。
+echo Review::get_review_count(), PHP_EOL;
+
 $review = new Review(); // Reviewクラスのインスタンスを生成
 var_dump($review);
 $review->show_review();
