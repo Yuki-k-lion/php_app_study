@@ -24,14 +24,11 @@ class Review {
   $this->impression = $impression;
 }
 
-  public function show_review() {
-  echo "ジャンル : " . "映画\n";
-  echo "---------------------------\n";
-  echo "タイトル : " . "るろうに剣心\n";
-  echo "---------------------------\n";
-  echo "感想 :\n";
-  echo "アクションがすごい！\n";
-  echo "---------------------------\n";
+public function show_review() {
+  $line = "---------------------------";
+  echo "ジャンル : {$this->genre}\n{$line}\n";
+  echo "タイトル : {$this->title}\n{$line}\n";
+  echo "感想 :\n{$this->impression}\n{$line}\n";
 }
 }
 // 静的メソッド
