@@ -1,6 +1,6 @@
-<!-- クラス名のルール
+クラス名のルール
 クラス名は半角英大文字から始まる名前にします。
-例: User Account Image Group など -->
+例: User Account Image Group など
 
 <?php
 class Review {
