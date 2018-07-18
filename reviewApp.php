@@ -8,6 +8,7 @@
  // $comment = "佐藤";
  $post = array();
  //連想配列＝ハッシュ。添字配列＝配列？
+ $count = 0;
 
 //input
 function post_review(){
@@ -38,8 +39,11 @@ function read_review(){
  }
 
 //実行部
-echo "レビュー数：0";
+while (true){
+
+echo "レビュー数：$count\n";
 echo "[0]レビューを書く\n[1]レビューを読む\n[2]アプリを終了する";
+$count += 1;
 
   $first_input = intval(trim(fgets(STDIN)));
   if(first_input == 0){
@@ -49,7 +53,7 @@ echo "[0]レビューを書く\n[1]レビューを読む\n[2]アプリを終了�
   }elseif (first_input == 2) {
     end_program();
   }else {
-    error_message()
+    error_message();
   }
-
+}
  ?>
