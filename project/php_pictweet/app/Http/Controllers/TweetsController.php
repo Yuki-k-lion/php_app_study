@@ -11,8 +11,9 @@ class TweetsController extends Controller
 {
   public function index()
   {
-    $tweet = Tweet::find(1);
+    // $tweet = Tweet::find(1);
+    $tweets = Tweet::all();
 
-    return view('tweets.index')->with('tweet', $tweet);
+    return view('tweets.index')->with('tweets', $tweets);
   }
 }
