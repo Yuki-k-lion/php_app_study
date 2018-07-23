@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Tweet;
 
 class TweetsController extends Controller
 {
   public function index()
   {
-    $tweet = "プログラミングなう";
+    $tweet = Tweet::find(1);
 
     return view('tweets.index')->with('tweet', $tweet);
   }
