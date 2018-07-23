@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Tweet extends Model
 {
   protected $fillable = array('name', 'image', 'text');
+  protected $guarded = array('id');
 }
