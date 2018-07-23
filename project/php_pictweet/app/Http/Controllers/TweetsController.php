@@ -10,6 +10,8 @@ class TweetsController extends Controller
 {
   public function index()
   {
-    return view('tweets.index');
+    $tweet = "プログラミングなう";
+
+    return view('tweets.index')->with('tweet', $tweet);
   }
 }
