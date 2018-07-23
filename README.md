@@ -12,3 +12,8 @@ phpでtwitter作る。
 # 参考
 [Objective-PHP.net（クラスとオブジェクト）](http://www.objective-php.net/basic/instance)
 [Objective-PHP.net（インスタンス）](http://www.objective-php.net/basic/class)
+
+
+# メモ
+## コントローラーを作成
+$ php artisan make:controller コントローラ-名
