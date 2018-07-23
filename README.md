@@ -17,3 +17,9 @@ phpでtwitter作る。
 # メモ
 ## コントローラーを作成
 $ php artisan make:controller コントローラ-名
+
+## テストサーバーを起動
+$ php artisan serve
+
+## モデルを作成
+$ php artisan make:model モデル名(先頭大文字)
