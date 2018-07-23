@@ -1,0 +1,16 @@
+$ php artisan tinker
+Psy Shell v0.7.2 (PHP 7.0.28 — cli) by Justin Hileman
+>>> $twe = App\Tweet.find(1);
+PHP Fatal error:  Undefined constant App\Tweet in eval()'d code on line 1
+>>> $twe = App\Tweet::find(1);
+=> App\Tweet {#650
+     id: 1,
+     name: "namw",
+     text: "test",
+     image: "none",
+     created_at: null,
+     updated_at: null,
+   }
+>>> $twe->name
+=> "namw"
+>>> 
