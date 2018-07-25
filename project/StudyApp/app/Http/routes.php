@@ -21,4 +21,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/memos/create', 'MemosController@create');
 
+    Route::post('/memos', 'MemosController@store');
+
+
 });
