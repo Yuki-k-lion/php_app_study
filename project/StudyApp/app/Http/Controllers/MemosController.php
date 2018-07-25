@@ -14,4 +14,8 @@ class MemosController extends Controller
 
     return view('memos.index')->with('memos', $memos);
   }
+  public function create()
+{
+    return view('memos.create');
+}
 }
