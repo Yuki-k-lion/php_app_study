@@ -10,6 +10,8 @@ class MemosController extends Controller
 {
   public function index()
   {
-    return view('memos.index');
+    $memos = Memo::all();
+
+    return view('memos.index')->with('memos', $memos);
   }
 }
