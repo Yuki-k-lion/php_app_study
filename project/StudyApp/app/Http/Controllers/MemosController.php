@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\Memo;
+
 class MemosController extends Controller
 {
   public function index()
