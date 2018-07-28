@@ -12,7 +12,8 @@ class MemosController extends Controller
 {
   public function index()
   {
-    $memos = Memo::all();
+    // $memos = Memo::all();
+    $memos = Memo::orderBy('created_at', 'DESC')->get();
 
     return view('memos.index')->with('memos', $memos);
   }
