@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
 
+    Route::get('/', 'MemosController@index');
+
     Route::get('/memos', 'MemosController@index');
 
     Route::get('/memos/create', 'MemosController@create');
