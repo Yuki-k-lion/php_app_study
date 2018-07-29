@@ -5320,7 +5320,7 @@ small {
 .btn-floating.halfway-fab {
   position: absolute;
   right: 24px;
-  bottom: -20px;
+  bottom: 30px;
 }
 
 .btn-floating.halfway-fab.left {
