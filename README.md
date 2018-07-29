@@ -27,6 +27,9 @@ $ php artisan make:model モデル名(先頭大文字)
 ## コンソールの起動
 $ php artisan tinker
 
-# psy/psyshをインストール
+## psy/psyshをインストール
 $ composer require psy/psysh:@stable  
 デバッグツール
+
+## ルーティングの確認
+$ php artisan route:list
