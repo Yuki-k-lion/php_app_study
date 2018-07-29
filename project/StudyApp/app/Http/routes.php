@@ -27,6 +27,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/memos/{id}/edit', 'MemosController@edit');
 
+    Route::patch('/memos/{id}', 'MemosController@update');
+
     Route::get('/memos/{id}/delete', 'Memoscontroller@destroy');
 
 });
