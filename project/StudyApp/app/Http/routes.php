@@ -25,6 +25,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::post('/memos', 'MemosController@store');
 
+    Route::get('/memos/{id}/edit', 'MemosController@edit');
+
     Route::get('/memos/{id}/delete', 'Memoscontroller@destroy');
 
 });
