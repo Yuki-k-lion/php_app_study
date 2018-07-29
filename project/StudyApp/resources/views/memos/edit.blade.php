@@ -3,7 +3,7 @@
 @section('content')
 <div class="contents row">
    <div class="container">
-   {{ Form::open(['url' => '/memos', 'method' => 'patch'])}}
+   {{ Form::open(['url' => '/memos', 'method' => 'PATCH'])}}
      <h3>
        Edit
      </h3>
