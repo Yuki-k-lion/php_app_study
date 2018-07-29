@@ -10,7 +10,7 @@ use App\Memo;
 
 class MemosController extends Controller
 {
-  
+
   public function index()
   {
     // $memos = Memo::all();
@@ -40,5 +40,10 @@ class MemosController extends Controller
     Memo::destroy($id);
     return view(memos.destroy);
   }
+
+  public function edit($id){
+     $memo = Memo::find($id);
+     return view('memos.edit')->with('memo', $memo);
+ }
 
 }
