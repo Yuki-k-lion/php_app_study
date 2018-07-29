@@ -29,6 +29,7 @@ class MemosController extends Controller
         'text' => $request->text
       )
     );
+    // eval(\Psy\SH());
 
     return view('memos.store');
   }
