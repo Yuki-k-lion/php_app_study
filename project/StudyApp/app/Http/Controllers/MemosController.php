@@ -10,6 +10,7 @@ use App\Memo;
 
 class MemosController extends Controller
 {
+  
   public function index()
   {
     // $memos = Memo::all();
@@ -17,10 +18,12 @@ class MemosController extends Controller
 
     return view('memos.index')->with('memos', $memos);
   }
+
   public function create()
   {
       return view('memos.create');
   }
+
   public function store(Request $request)
   {
     Memo::create(
@@ -30,7 +33,12 @@ class MemosController extends Controller
       )
     );
     // eval(\Psy\SH());
-
     return view('memos.store');
   }
+
+  public function destroy($id){
+    Memo::destroy($id);
+    return view(memos.destroy);
+  }
+
 }
