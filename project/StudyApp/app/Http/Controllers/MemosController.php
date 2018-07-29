@@ -35,7 +35,7 @@ class MemosController extends Controller
 
   public function destroy($id){
     Memo::destroy($id);
-    return view(memos.destroy);
+    return view('memos.destroy');
   }
 
   public function edit($id){
