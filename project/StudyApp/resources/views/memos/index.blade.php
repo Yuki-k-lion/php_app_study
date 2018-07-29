@@ -5,8 +5,8 @@
         @foreach($memos as $memo)
           <div class="content_post">
             <ul class = "memo__list">
-              <li><a href="#">Edit</a>
-              <li><a href="memos/{{$memo->id}}/delete">Delete</a>
+              <li><a href="/memos/{{$memo->id}}/edit">Edit</a>
+              <li><a href="/memos/{{$memo->id}}/delete">Delete</a>
             </ul>
             <p>{{ $memo->text  }}</p>
             <span class="name">{{ $memo->name }}</span>
